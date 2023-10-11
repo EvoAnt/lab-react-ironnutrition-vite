@@ -31,7 +31,7 @@ const AddFoodForm = ({ addFood }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-        <Divider>Add Food Entry</Divider>
+      <Divider>Add Food Entry</Divider>
       <label>
         Name:
         <Input
@@ -76,7 +76,7 @@ const AddFoodForm = ({ addFood }) => {
       </label>
       <br />
 
-      <Button type="submit">Create</Button>
+      <Button onClick={handleSubmit} type="submit">Create</Button>
     </form>
   );
 };
